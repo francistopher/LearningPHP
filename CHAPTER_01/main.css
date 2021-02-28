@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1em;
+    padding: 0;
+    background-color: black;
+}
+
+main {
+    width: 30em;
+    height: 15em;
+    margin: auto;
+    padding: 1.5em;
+    background: black;
+    border: 2px solid lime;
+    color: lime;
+}
+
+h1 {
+    text-align: center;
+    color: lime;
+}
+
+label {
+    width: 10em;
+    padding-right: 1em;
+    float: left;
+}
+
+#data_input {
+    float: left;
+    width: 15em;
+    margin-bottom: .5em;
+}
+
+#data span {
+    padding-left: .25em;
+}
+
+#buttons input {
+    float: left;
+    margin-bottom: .5em;
+    background-color: black;
+}
+
+br {
+    clear: left;
+}
+
+input {
+    color: lime;
+    background-color: black;
+    border: 2px solid lime;
+}
