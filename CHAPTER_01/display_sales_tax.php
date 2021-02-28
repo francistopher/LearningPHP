@@ -9,12 +9,12 @@ if (!number_format($list_price, 2)) {
     $list_price = 0.0;
 }
 
-// Catch a non numeric discount_percent
+// Catch a non numeric tax_percent
 if (!number_format($tax_percent, 2)) {
     $tax_price = 0.0;
 }
 
-// calculate the discount
+// calculate the tax
 $tax = $list_price * $tax_percent * .01;
 $total_price = $list_price + $tax;
 
@@ -36,7 +36,7 @@ $product_description_escaped = htmlspecialchars($product_description);
 
 <head>
     <meta charset="utf-8" />
-    <title>Product Discount Calculator</title>
+    <title>Product Sales Tax Calculator</title>
     <link rel="stylesheet" type="text/css" href="main.css">
     <meta name="viewport" content="width=device-width, initial-width=1, minimum-scale=1, user-scalable=no"/>
 </head>
@@ -44,7 +44,7 @@ $product_description_escaped = htmlspecialchars($product_description);
 <body>
 
 <main>
-        <h1>Product Tax Calculator</h1>
+        <h1>Product Sales Tax Calculator</h1>
 
         <label>Product Description:</label>
         <span><?php echo $product_description_escaped; ?></span><br>
